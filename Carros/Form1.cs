@@ -146,5 +146,58 @@ namespace Carros
         {
             textBox6.MaxLength = 4;
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.MaxLength = 20;
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox3.MaxLength = 20;
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            textBox4.MaxLength = 20;
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.MaxLength = 20;
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+            textBox8.MaxLength = 20;
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            textBox9.MaxLength = 17;
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+            textBox10.MaxLength = 7;
+        }
+
+        private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                { e.Handled = true; }
+            }
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+            textBox11.MaxLength = 256;
+        }
     }
 }
